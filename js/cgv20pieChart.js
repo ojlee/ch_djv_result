@@ -1,7 +1,7 @@
-var pie = new d3pie("ocn20pieChart", {
+var pie = new d3pie("cgv20pieChart", {
   "header": {
     "title": {
-      "text": "OCN TOP20",
+      "text": "CGV TOP20",
       "fontSize": 24,
       "font": "open sans"
     },
@@ -13,7 +13,7 @@ var pie = new d3pie("ocn20pieChart", {
     "titleSubtitlePadding": 6
   },
   "footer": {
-    "text": "5219개 데이터",
+    "text": "7889개 데이터",
     "color": "#999999",
     "font": "open sans",
     "location": "bottom-left"
@@ -28,123 +28,123 @@ var pie = new d3pie("ocn20pieChart", {
     "sortOrder": "value-desc",
     "content": [
       {
-        "label": title[24],
-        "value": value[24],
+        "label": title[0],
+        "value": value[0],
         "color": "#2484c1"
       },
       {
-        "label": title[25],
-        "value": value[25],
+        "label": title[1],
+        "value": value[1],
         "color": "#0c6197"
       },
       {
-        "label": title[26],
-        "value": value[26],
+        "label": title[2],
+        "value": value[2],
         "color": "#4daa4b"
       },
       {
-        "label": title[27],
-        "value": value[27],
+        "label": title[3],
+        "value": value[3],
         "color": "#90c469"
       },
       {
-        "label": title[28],
-        "value": value[28],
+        "label": title[4],
+        "value": value[4],
         "color": "#daca61"
       },
       {
-        "label": title[29],
-        "value": value[29],
+        "label": title[5],
+        "value": value[5],
         "color": "#e4a14b"
       },
       {
-        "label": title[30],
-        "value": value[30],
+        "label": title[6],
+        "value": value[6],
         "color": "#e98125"
       },
       {
-        "label": title[31],
-        "value": value[31],
+        "label": title[7],
+        "value": value[7],
         "color": "#cb2121"
       },
       {
-        "label": title[32],
-        "value": value[32],
+        "label": title[8],
+        "value": value[8],
         "color": "#830909"
       },
       {
-        "label": title[33],
-        "value": value[33],
+        "label": title[9],
+        "value": value[9],
         "color": "#923e99"
       },
       {
-        "label": title[34],
-        "value": value[34],
+        "label": title[10],
+        "value": value[10],
         "color": "#ae83d5"
       },
       {
-        "label": title[35],
-        "value": value[35],
+        "label": title[11],
+        "value": value[11],
         "color": "#bf273e"
       },
       {
-        "label": title[36],
-        "value": value[36],
+        "label": title[12],
+        "value": value[12],
         "color": "#ce2aeb"
       },
       {
-        "label": title[37],
-        "value": value[37],
+        "label": title[13],
+        "value": value[13],
         "color": "#bca44a"
       },
       {
-        "label": title[38],
-        "value": value[38],
+        "label": title[14],
+        "value": value[14],
         "color": "#618d1b"
       },
       {
-        "label": title[39],
-        "value": value[39],
+        "label": title[15],
+        "value": value[15],
         "color": "#1ee67b"
       },
       {
-        "label": title[40],
-        "value": value[40],
+        "label": title[16],
+        "value": value[16],
         "color": "#b0ec44"
       },
       {
-        "label": title[41],
-        "value": value[41],
+        "label": title[17],
+        "value": value[17],
         "color": "#a4a0c9"
       },
       {
-        "label": title[42],
-        "value": value[42],
+        "label": title[18],
+        "value": value[18],
         "color": "#322849"
       },
       {
-        "label": title[43],
-        "value": value[43],
+        "label": title[19],
+        "value": value[19],
         "color": "#86f71a"
       },
       {
-        "label": title[44],
-        "value": value[44],
+        "label": title[20],
+        "value": value[20],
         "color": "#d1c87f"
       },
       {
-        "label": title[45],
-        "value": value[45],
+        "label": title[21],
+        "value": value[21],
         "color": "#7d9058"
       },
       {
-        "label": title[46],
-        "value": value[46],
+        "label": title[22],
+        "value": value[22],
         "color": "#44b9b0"
       },
       {
-        "label": title[47],
-        "value": value[47],
+        "label": title[23],
+        "value": value[23],
         "color": "#7c37c0"
       }
     ]
