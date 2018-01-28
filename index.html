@@ -111,51 +111,7 @@
 
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="experience">
         <div class="my-auto">
-          <h2 class="mb-5">Experience</h2>
-
-          <div class="resume-item d-flex flex-column flex-md-row mb-5">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">Senior Web Developer</h3>
-              <div class="subheading mb-3">Intelitec Solutions</div>
-              <p>Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.</p>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">March 2013 - Present</span>
-            </div>
-          </div>
-
-          <div class="resume-item d-flex flex-column flex-md-row mb-5">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">Web Developer</h3>
-              <div class="subheading mb-3">Intelitec Solutions</div>
-              <p>Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.</p>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">December 2011 - March 2013</span>
-            </div>
-          </div>
-
-          <div class="resume-item d-flex flex-column flex-md-row mb-5">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">Junior Web Designer</h3>
-              <div class="subheading mb-3">Shout! Media Productions</div>
-              <p>Podcasting operational change management inside of workflows to establish a framework. Taking seamless key performance indicators offline to maximise the long tail. Keeping your eye on the ball while performing a deep dive on the start-up mentality to derive convergence on cross-platform integration.</p>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">July 2010 - December 2011</span>
-            </div>
-          </div>
-
-          <div class="resume-item d-flex flex-column flex-md-row">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">Web Design Intern</h3>
-              <div class="subheading mb-3">Shout! Media Productions</div>
-              <p>Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.</p>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">September 2008 - June 2010</span>
-            </div>
-          </div>
+          <div id="pieChart"></div>
 
         </div>
 
@@ -304,6 +260,215 @@
 
     <!-- Custom scripts for this template -->
     <script src="js/resume.min.js"></script>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/d3/4.7.2/d3.min.js"></script>
+    <script src="d3pie.min.js"></script>
+    <script>
+    var pie = new d3pie("pieChart", {
+    	"header": {
+    		"title": {
+    			"text": "OCN TOP20",
+    			"fontSize": 24,
+    			"font": "open sans"
+    		},
+    		"subtitle": {
+    			"color": "#999999",
+    			"fontSize": 12,
+    			"font": "open sans"
+    		},
+    		"titleSubtitlePadding": 6
+    	},
+    	"footer": {
+    		"text": "5219개 데이터",
+    		"color": "#999999",
+    		"font": "open sans",
+    		"location": "bottom-left"
+    	},
+    	"size": {
+    		"canvasHeight": 600,
+    		"canvasWidth": 800,
+    		"pieInnerRadius": "19%",
+    		"pieOuterRadius": "90%"
+    	},
+    	"data": {
+    		"sortOrder": "value-desc",
+    		"content": [
+    			{
+    				"label": "베테랑",
+    				"value": 52,
+    				"color": "#2484c1"
+    			},
+    			{
+    				"label": "가디언즈오브갤럭시",
+    				"value": 48,
+    				"color": "#0c6197"
+    			},
+    			{
+    				"label": "루시",
+    				"value": 46,
+    				"color": "#4daa4b"
+    			},
+    			{
+    				"label": "암살",
+    				"value": 46,
+    				"color": "#90c469"
+    			},
+    			{
+    				"label": "킹스맨 시크릿에이전트",
+    				"value": 45,
+    				"color": "#daca61"
+    			},
+    			{
+    				"label": "검사외전",
+    				"value": 41,
+    				"color": "#e4a14b"
+    			},
+    			{
+    				"label": "신세계",
+    				"value": 39,
+    				"color": "#e98125"
+    			},
+    			{
+    				"label": "미션임파서블5 로그네이션",
+    				"value": 37,
+    				"color": "#cb2121"
+    			},
+    			{
+    				"label": "어벤져스2 에이지오브울트론",
+    				"value": 37,
+    				"color": "#830909"
+    			},
+    			{
+    				"label": "엑스맨 데이즈오브퓨처패스트",
+    				"value": 37,
+    				"color": "#923e99"
+    			},
+    			{
+    				"label": "인터스텔라",
+    				"value": 35,
+    				"color": "#ae83d5"
+    			},
+    			{
+    				"label": "아이언맨3",
+    				"value": 34,
+    				"color": "#bf273e"
+    			},
+    			{
+    				"label": "캡틴아메리카 윈터솔저",
+    				"value": 34,
+    				"color": "#ce2aeb"
+    			},
+    			{
+    				"label": "터미네이터5 제니시스",
+    				"value": 34,
+    				"color": "#bca44a"
+    			},
+    			{
+    				"label": "어벤져스",
+    				"value": 32,
+    				"color": "#618d1b"
+    			},
+    			{
+    				"label": "쥬라기월드",
+    				"value": 32,
+    				"color": "#1ee67b"
+    			},
+    			{
+    				"label": "신의한수",
+    				"value": 30,
+    				"color": "#b0ec44"
+    			},
+    			{
+    				"label": "아저씨",
+    				"value": 30,
+    				"color": "#a4a0c9"
+    			},
+    			{
+    				"label": "겨울왕국",
+    				"value": 29,
+    				"color": "#322849"
+    			},
+    			{
+    				"label": "쿵푸팬더3",
+    				"value": 29,
+    				"color": "#86f71a"
+    			},
+    			{
+    				"label": "메이즈러너",
+    				"value": 28,
+    				"color": "#d1c87f"
+    			},
+    			{
+    				"label": "앤트맨",
+    				"value": 28,
+    				"color": "#7d9058"
+    			},
+    			{
+    				"label": "잭리처",
+    				"value": 28,
+    				"color": "#44b9b0"
+    			},
+    			{
+    				"label": "맨오브스틸",
+    				"value": 27,
+    				"color": "#7c37c0"
+    			}
+    		]
+    	},
+    	"labels": {
+    		"outer": {
+    			"pieDistance": 32
+    		},
+    		"inner": {
+    			"format": "value",
+    			"hideWhenLessThanPercentage": 3
+    		},
+    		"mainLabel": {
+    			"fontSize": 11
+    		},
+    		"percentage": {
+    			"color": "#ffffff",
+    			"decimalPlaces": 0
+    		},
+    		"value": {
+    			"color": "#ffffff",
+    			"fontSize": 14
+    		},
+    		"lines": {
+    			"enabled": true
+    		},
+    		"truncation": {
+    			"enabled": true
+    		}
+    	},
+    	"tooltips": {
+    		"enabled": true,
+    		"type": "placeholder",
+    		"string": "{label}: {value}, {percentage}%",
+    		"styles": {
+    			"fadeInSpeed": 129,
+    			"backgroundOpacity": 0.74,
+    			"borderRadius": 4,
+    			"fontSize": 18,
+    			"padding": 19
+    		}
+    	},
+    	"effects": {
+    		"pullOutSegmentOnClick": {
+    			"effect": "linear",
+    			"speed": 400,
+    			"size": 8
+    		}
+    	},
+    	"misc": {
+    		"gradient": {
+    			"enabled": true,
+    			"percentage": 85
+    		}
+    	},
+    	"callbacks": {}
+    });
+    </script>
 
   </body>
 
