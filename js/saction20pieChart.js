@@ -1,7 +1,7 @@
 var pie = new d3pie("saction20pieChart", {
   "header": {
     "title": {
-      "text": "SACTION TOP20",
+      "text": "SUPER ACTION TOP20",
       "fontSize": 24,
       "font": "open sans"
     },
@@ -28,6 +28,7 @@ var pie = new d3pie("saction20pieChart", {
     "sortOrder": "value-desc",
     "content": [
       {
+        "ch": ch[48],
         "label": title[48],
         "value": value[48],
         "color": "#2484c1"
@@ -178,7 +179,7 @@ var pie = new d3pie("saction20pieChart", {
   "tooltips": {
     "enabled": true,
     "type": "placeholder",
-    "string": "{label}: {value}, {percentage}%",
+    "string": "{label}: {value}, {percentage}%, {ch}",
     "styles": {
       "fadeInSpeed": 129,
       "backgroundOpacity": 0.74,
