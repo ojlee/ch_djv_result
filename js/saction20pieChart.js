@@ -28,7 +28,6 @@ var pie = new d3pie("saction20pieChart", {
     "sortOrder": "value-desc",
     "content": [
       {
-        "ch": ch[48],
         "label": title[48],
         "value": value[48],
         "color": "#2484c1"
@@ -179,7 +178,7 @@ var pie = new d3pie("saction20pieChart", {
   "tooltips": {
     "enabled": true,
     "type": "placeholder",
-    "string": "{label}: {value}, {percentage}%, {ch}",
+    "string": "{label}: {value}, {percentage}%",
     "styles": {
       "fadeInSpeed": 129,
       "backgroundOpacity": 0.74,
