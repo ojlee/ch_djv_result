@@ -1,4 +1,4 @@
-
+setTimeout(function() {
 var pie = new d3pie("ocn20pieChart", {
   "header": {
     "title": {
@@ -179,7 +179,7 @@ var pie = new d3pie("ocn20pieChart", {
   "tooltips": {
     "enabled": true,
     "type": "placeholder",
-    "string": "{label}: {value}, {percentage}%",
+    "string": "{label}: {value}회, {percentage}%",
     "styles": {
       "fadeInSpeed": 129,
       "backgroundOpacity": 0.74,
@@ -205,3 +205,4 @@ var pie = new d3pie("ocn20pieChart", {
   },
   "callbacks": {}
 });
+}, 3000);

@@ -2,7 +2,6 @@
 <html lang="ko">
 
   <head>
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
@@ -23,6 +22,46 @@
     <!-- Custom styles for this template -->
     <link href="css/resume.css" rel="stylesheet">
 
+    <link  id='GoogleFontsLink' href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet' type='text/css'>
+		<script>
+ WebFontConfig = {
+ google:
+{families: ["Open Sans",]},active: function() {
+ DrawTheChart(ChartData,ChartOptions,"chart-01","Radar")}
+};
+		</script>
+		<script asyn src="https://livegap.com/charts/js/webfont.js">
+		</script><script src="https://livegap.com/charts/js/Chart.min.js"></script>
+		<script>
+function DrawTheChart(ChartData,ChartOptions,ChartId,ChartType){
+eval('var myLine = new Chart(document.getElementById(ChartId).getContext("2d")).'+ChartType+'(ChartData,ChartOptions);document.getElementById(ChartId).getContext("2d").stroke();')
+}
+		</script>
+
+
+    <style>
+	#backButton {
+		border-radius: 4px;
+		padding: 8px;
+		border: none;
+		font-size: 16px;
+		background-color: #2eacd1;
+		color: white;
+		position: absolute;
+		top: 10px;
+		right: 10px;
+		cursor: pointer;
+	}
+	.invisible {
+		display: none;
+	}
+  #nationline{
+    float : left;
+  }
+  #nation_content{
+    margin-left: 80px;
+  }
+</style>
   </head>
 
   <body id="page-top">
@@ -59,6 +98,12 @@
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#sactionTop20">SuperAction TOP20</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#nationvs">채널별 외화비율</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#genre">채널별 장르비율</a>
           </li>
         </ul>
       </div>
@@ -112,7 +157,7 @@
                 채널CGV : 743일 치 편성표 데이터 수집<br/>
                 OCN : 535일 치 편성표 데이터 수집<br/>
                 SuperAction : 743일 치 편성표 데이터 수집<br/>
-                중복 제외 총 2242 개의 영화<br/>
+                중복 제외 총 2,242 개의 영화, 20,980 개의 편성표데이터<br/>
                 채널별 방영 횟수 상위 20개 영화에 대한 부가정보(장르, 국가 등) 수집
               </p>
             </div>
@@ -273,6 +318,22 @@
         </div>
       </section>
 
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="nationvs">
+        <div id="nation_content" class="my-auto">
+          <div id="nationline">
+            <div id="cgvNationpie"></div>
+            <div id="ocnNationpie"></div>
+          </div>
+          <div id="sactionNationpie"></div>
+        </div>
+      </section>
+
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="genre">
+        <div class="my-auto">
+          <canvas  id="genreChart" width="800" height="600"  style="background-color:rgba(255,255,255,1.00);border-radius:0px;width:700px;height:400px;padding-left:0px;padding-right:0px;padding-top:0px;padding-bottom:0px"></canvas>
+        </div>
+      </section>
+
     </div>
 
     <!-- Bootstrap core JavaScript -->
@@ -291,6 +352,16 @@
     <script src="/js/ocn20pieChart.js"></script>
     <script src="/js/cgv20pieChart.js"></script>
     <script src="/js/saction20pieChart.js"></script>
+
+    <script src="/js/calnation.js"></script>
+    <script src="/js/nationChart_cgv.js"></script>
+    <script src="/js/nationChart_ocn.js"></script>
+    <script src="/js/nationChart_saction.js"></script>
+
+    <script src="/js/calgenre.js"></script>
+    <script src="/js/genreChart.js"></script>
+
+
 
   </body>
 

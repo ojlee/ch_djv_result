@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <p id= "action">action : </p>
+    <p id= "sf">sf : </p>
+    <p id= "thril">thril : </p>
+    <p id= "adven">adven : </p>
+    <p id= "crime">crime : </p>
+    <p id= "come">come : </p>
+    <p id= "anime">anime : </p>
+    <p id= "romance">romance : </p>
+
+
+
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/resume.min.js"></script>
+
+    <script src="/js/ReadJson.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/d3/4.7.2/d3.min.js"></script>
+      <script src="/js/calgenre.js"></script>
+      <script>
+      calgenre(0,24);
+      $("#action").append(g_action/g_total*100 + "% ");
+      $("#sf").append(g_sf/g_total*100 + "% ");
+      $("#thril").append(g_thriler/g_total*100 + "% ");
+      $("#adven").append(g_adventure/g_total*100 + "% ");
+      $("#crime").append(g_crime/g_total*100 + "% ");
+      $("#come").append(g_comedy/g_total*100 + "% ");
+      $("#anime").append(g_animation/g_total*100 + "% ");
+      $("#romance").append(g_romance/g_total*100 + "% ");
+      calgenre(24,48);
+      $("#action").append(g_action/g_total*100 + "% ");
+      $("#sf").append(g_sf/g_total*100 + "% ");
+      $("#thril").append(g_thriler/g_total*100 + "% ");
+      $("#adven").append(g_adventure/g_total*100 + "% ");
+      $("#crime").append(g_crime/g_total*100 + "% ");
+      $("#come").append(g_comedy/g_total*100 + "% ");
+      $("#anime").append(g_animation/g_total*100 + "% ");
+      $("#romance").append(g_romance/g_total*100 + "% ");
+      calgenre(48,71);
+      $("#action").append(g_action/g_total*100 + "% ");
+      $("#sf").append(g_sf/g_total*100 + "% ");
+      $("#thril").append(g_thriler/g_total*100 + "% ");
+      $("#adven").append(g_adventure/g_total*100 + "% ");
+      $("#crime").append(g_crime/g_total*100 + "% ");
+      $("#come").append(g_comedy/g_total*100 + "% ");
+      $("#anime").append(g_animation/g_total*100 + "% ");
+      $("#romance").append(g_romance/g_total*100 + "% ");
+      </script>
+  </body>
+</html>
