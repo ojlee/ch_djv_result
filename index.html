@@ -43,6 +43,9 @@
             <a class="nav-link js-scroll-trigger" href="#about">About</a>
           </li>
           <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#delay">지연사유</a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#result">평가기준 결과내용</a>
           </li>
           <li class="nav-item">
@@ -70,7 +73,7 @@
             <span class="mentee">이오주,이승수,허지원</span>
           </h2>
           <div class="subject"><데이터분석> 채널-데자뷰 : TV 영화 채널 별로 가장 많이 상영되는 영화는?</div>
-          <p class="mb-5">
+          <p>
             <br/><br/>목&emsp;&emsp;표 : 케이블 TV 사이트에서 영화 채널의 편성표 데이터를 수집하여 채널별로 어떤 영화가 많이 상영되었는지 분석<br/>
             <br/>기대효과 : 일정 기간 동안 가장 많이 상영 된 영화를 분석하여 TV 시청자들의 선호도와 비교할 수 있음<br/>
             <br/>평가기준 : 얼마나 많은 데이터를 수집하였는가 / 얼마나 정확한 분석이 이루어졌는가 / 분석한 결과를 토대로 유용한 서비스가 이루어질 수 있는가<br/>
@@ -78,7 +81,25 @@
         </div>
       </section>
 
-      <!-- 작업결과 -->
+      <!-- 지연사유 -->
+      <section class="resume-section p-3 p-lg-5 d-flex d-column" id="delay">
+        <div class="my-auto">
+          <h2 class="mb-5">지연사유</h2>
+          <div class="subheading mb-3">파이썬 프로그래밍에 대한 경험 및 지식 부족</div>
+          <br/>
+          <div class="subheading mb-3">크롤링 과정에서의 예외상황 발생</div>
+          <p>
+                 &emsp;- 편성표 자체에서 같은 영화 제목을 다르게 표현하는 경우가 있음
+            <br/>&emsp;- 편성표 상의 제목을 그대로 가져올 경우 다음 영화 페이지 내에서 정확한 검색이 이뤄지지 않는 경우가 있음
+            <br/>&emsp;- 구글을 통해 접근하는 경우 찾고자하는 영화가 아닌 다른 영화나 영화에 대한 칼럼 페이지가 상단에 노출되는 경우가 있음
+            <br/>&emsp;- 간혹 연도에 따라 다음 영화 페이지 내에서 수집하고자하는 데이터의 위치 및 태그가 상이한 경우가 있음
+            <br/>&emsp;- 영화 채널에서 영화가 아닌 드라마를 방영
+            <br/>
+          </p>
+        </div>
+      </section>
+
+      <!-- 평가기준 결과내용 -->
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="result">
         <div class="my-auto">
           <h2 class="mb-5">평가기준 결과내용</h2>
@@ -131,27 +152,27 @@
                     </th>
                   </tr>
                   <tr>
-                    <td>방영횟수</td>
+                    <td width="45%">방영횟수</td>
                     <td>40회</td>
                   </tr>
                   <tr>
-                    <td>장르</td>
+                    <td width="45%">장르</td>
                     <td>스릴러</td>
                   </tr>
                   <tr>
-                    <td>평점</td>
+                    <td width="45%">평점</td>
                     <td>7.2</td>
                   </tr>
                   <tr>
-                    <td>국가</td>
+                    <td width="45%">국가</td>
                     <td>한국</td>
                   </tr>
                   <tr>
-                    <td>감독</td>
+                    <td width="45%">감독</td>
                     <td>백운학</td>
                   </tr>
                   <tr>
-                    <td>출연</td>
+                    <td width="45%">출연</td>
                     <td>손현주</td>
                   </tr>
                 </table>
@@ -161,34 +182,34 @@
               <div class="subheading mb-3">OCN</div>
               <hr/>
               <p>
-                <table width="70%"  style="text-align : center;">
+                <table width="70%" style="text-align : center;">
                   <tr>
                     <th colspan="2">
                       <img src="img/ocnTop1.jpg" alt="">
                     </th>
                   </tr>
                   <tr>
-                    <td>방영횟수</td>
+                    <td width="45%">방영횟수</td>
                     <td>52회</td>
                   </tr>
                   <tr>
-                    <td>장르</td>
+                    <td width="45%">장르</td>
                     <td>액션/드라마</td>
                   </tr>
                   <tr>
-                    <td>평점</td>
+                    <td width="45%">평점</td>
                     <td>8.4</td>
                   </tr>
                   <tr>
-                    <td>국가</td>
+                    <td width="45%">국가</td>
                     <td>한국</td>
                   </tr>
                   <tr>
-                    <td>감독</td>
+                    <td width="45%">감독</td>
                     <td>류승완</td>
                   </tr>
                   <tr>
-                    <td>출연</td>
+                    <td width="45%">출연</td>
                     <td>황정민,유아인</td>
                   </tr>
                 </table>
@@ -198,34 +219,34 @@
               <div class="subheading mb-3">SuperAction</div>
               <hr/>
               <p>
-                <table width="70%"  style="text-align : center;">
+                <table width="70%" style="text-align : center;">
                   <tr>
                     <th colspan="2">
                       <img src="img/superactionTop1.jpg" alt="">
                     </th>
                   </tr>
                   <tr>
-                    <td>방영횟수</td>
+                    <td width="45%">방영횟수</td>
                     <td>26회</td>
                   </tr>
                   <tr>
-                    <td>장르</td>
+                    <td width="45%">장르</td>
                     <td>로맨스/멜로</td>
                   </tr>
                   <tr>
-                    <td>평점</td>
+                    <td width="45%">평점</td>
                     <td>5.9</td>
                   </tr>
                   <tr>
-                    <td>국가</td>
+                    <td width="45%">국가</td>
                     <td>한국</td>
                   </tr>
                   <tr>
-                    <td>감독</td>
+                    <td width="45%">감독</td>
                     <td>이숭환</td>
                   </tr>
                   <tr>
-                    <td>출연</td>
+                    <td width="45%">출연</td>
                     <td>김나연,이정우,한채진</td>
                   </tr>
                 </table>

@@ -1,7 +1,9 @@
 @import url(//fonts.googleapis.com/earlyaccess/hanna.css);
+@import url(//fonts.googleapis.com/earlyaccess/nanumbrushscript.css);
+@import url(//fonts.googleapis.com/earlyaccess/jejumyeongjo.css);
 
 body {
-  font-family: 'Open Sans', serif;
+  font-family: 'Jeju Myeongjo', serif;
   padding-top: 54px;
   color: #868e96;
 }
@@ -37,28 +39,8 @@ h2 {
 .subheading {
   text-transform: uppercase;
   font-weight: 500;
-  font-family: 'Saira Extra Condensed', serif;
+  font-family: 'Jeju Myeongjo', serif;
   font-size: 1.35rem;
-}
-
-.list-social-icons a {
-  color: #495057;
-}
-
-.list-social-icons a:hover {
-  color: #BD5D38;
-}
-
-.list-social-icons a .fa-lg {
-  font-size: 1.75rem;
-}
-
-.list-icons {
-  font-size: 3rem;
-}
-
-.list-icons .list-inline-item i:hover {
-  color: #BD5D38;
 }
 
 #sideNav .navbar-nav .nav-item .nav-link {
@@ -99,6 +81,8 @@ h2 {
     width: 100%;
   }
   #sideNav .navbar-collapse .navbar-nav .nav-item {
+    font-size: 20px;
+    font-family: 'Nanum Brush Script', sans-serif;
     display: block;
   }
   #sideNav .navbar-collapse .navbar-nav .nav-item .nav-link {
@@ -150,14 +134,23 @@ a:hover, a:focus, a:active {
 
 .mentee{
   color: #BD5D38;
-  font-family: 'Hanna', sans-serif;
+  font-family: 'Nanum Brush Script', sans-serif;
 }
 
 .subject{
   font-size: 1.35rem;
-  font-family: 'Hanna', sans-serif !important;
+  font-family: 'Nanum Brush Script', sans-serif !important;
 }
 
-*{
-  font-family: 'Hanna', sans-serif !important;
+.mb-0{
+  font-family: 'Nanum Brush Script', cursive !important;
+}
+.mb-5{
+  font-family: 'Nanum Brush Script', cursive !important;
+}
+p{
+  font-family: 'Jeju Myeongjo', serif !important;
+}
+table{
+  font-family: 'Jeju Myeongjo', serif !important;
 }
